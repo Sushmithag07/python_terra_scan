@@ -18,7 +18,7 @@ jobs:
     # Run sonar-scanner
   - name: SonarQube Scan
     env:
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Neeeeeeded to get PR information, if any
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Neeeded to get PR information, if any
       SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
       SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
     run: sonar-scanner -Dsonar.projectKey=pyton_terraform_scan -Dsonar.sources=. -Dsonar.host.url=http://3.87.178.52:9000 -Dsonar.login=sqp_e0ddb1d606f36211a8753b429c118c87d7a72281
