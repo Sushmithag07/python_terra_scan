@@ -21,4 +21,4 @@ jobs:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Neeeded to get PR information, if any
       SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
       SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
-    run: sonar-scanner -Dsonar.projectKey=pyton_terraform_scan -Dsonar.sources=. -Dsonar.host.url=http://3.87.178.52:9000 -Dsonar.login=sqp_111ff68ced30ca895f2ae3312dffb2f9ca4cd202
+    run: onar-scanner -Dsonar.projectKey=python_terraform_scan-11Oct -Dsonar.sources=. -Dsonar.host.url=http://3.87.178.52:9000 -Dsonar.login=sqp_111ff68ced30ca895f2ae3312dffb2f9ca4cd202
