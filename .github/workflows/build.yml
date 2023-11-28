@@ -21,4 +21,4 @@ jobs:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Neeeded to get PR information, if any
       SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
       SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
-    run: sonar-scanner -Dsonar.projectKey=mydemoproject -Dsonar.sources=. -Dsonar.host.url=http://3.87.178.52:8000 -Dsonar.token=sqp_b56eb1da6541558f0ad28c62bea7e663c8a7b1e6
+    run: sonar-scanner -Dsonar.projectKey=devscan1 -Dsonar.sources=. -Dsonar.host.url=http://dev-aurora-sonarqube-alb-356632589.us-west-2.elb.amazonaws.com -Dsonar.token=sqp_049165bd96ea10cc9a4c37e6176bc4b5fe6c7e2f
